@@ -10,13 +10,12 @@ function appendDom(){
   var propertyId = randomNumber(100,10000);
   var squareFoot = randomNumber(1000,10000);
   var valueSquareFoot = randomNumber(1,50);
-  //el.append('<p>'+ propertyId + '</p>');
 
   $el.append('<li>Property ID: ' + propertyId + '</li>');
   $el.append('<li>Square Foot: ' + squareFoot + '</li>');
   $el.append('<li>$' + valueSquareFoot + ' sq/ft</li>');
-  $el.append('<button>Delete</button>');
-  $el.hide().slideDown();
+  $el.append('<button class="btn">Delete</button>');
+  $el.hide().fadeToggle();
 
 };
 
